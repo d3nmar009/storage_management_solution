@@ -29,7 +29,7 @@ export const uploadFile = async ({
       ID.unique(),
       inputFile,
     );
-
+    console.log({ bucketFile });
     const fileDocument = {
       type: getFileType(bucketFile.name).type,
       name: bucketFile.name,
